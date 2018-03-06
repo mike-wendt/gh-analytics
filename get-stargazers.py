@@ -52,7 +52,8 @@ def get_users(owner, repo, token):
 
       if data and len(data) > 0:
         for u in data:
-          users.append(u['login'])
+          if u['login'] not in users:
+            users.append(u['login'])
         print('Finished page '+str(page))
         page += 1
       else:
