@@ -6,7 +6,7 @@ who is following your repos
 ## Usage
 
 ```
-./get-stargazers <owner> <repo> <token>
+./get-stargazers.py <owner> <repo> <token>
 ```
 
 * `<owner>` - owner of repo (can be user or org)
